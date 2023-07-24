@@ -44,10 +44,11 @@ const MyWork = ({ language }) => {
               />
             )}
           </Link>
+
           <h6 className="portfolio__title">
-            {item.title.length < 10
+            {item.title.length < 18
               ? item.title
-              : item.title.substring(0, 10) + "..."}
+              : item.title.substring(0, 16) + "..."}
           </h6>
           <div className="portfolio__description">
             {language
