@@ -28,21 +28,33 @@ const MyWork = ({ language }) => {
   const showPortfolio = data.map((item) => {
     return (
       <div key={item.id}>
-        <Link to={`/portafolio/${item.id}`}>
-          {item.id == 0 ? (
-            <img
-              src={`../portfolio-01.jpg`}
-              alt={`${item.title}`}
-              className="portfolio__img"
-            />
-          ) : (
-            <img
-              src={`../portfolio-0${item.id + 1}.jpg`}
-              alt={`${item.title}`}
-              className="portfolio__img"
-            />
-          )}
-        </Link>
+        <div className="portfolio__container">
+          <Link to={`/portafolio/${item.id}`}>
+            {item.id == 0 ? (
+              <img
+                src={`../portfolio-01.jpg`}
+                alt={`${item.title}`}
+                className="portfolio__img"
+              />
+            ) : (
+              <img
+                src={`../portfolio-0${item.id + 1}.jpg`}
+                alt={`${item.title}`}
+                className="portfolio__img"
+              />
+            )}
+          </Link>
+          <h6 className="portfolio__title">
+            {item.title.length < 10
+              ? item.title
+              : item.title.substring(0, 10) + "..."}
+          </h6>
+          <div className="portfolio__description">
+            {language
+              ? item.descriptionEnglish.substring(0, 65) + "..."
+              : item.descripcionEspañol.substring(0, 65) + "..."}
+          </div>
+        </div>
       </div>
     );
   });
