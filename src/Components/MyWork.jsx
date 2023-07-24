@@ -26,7 +26,6 @@ const MyWork = ({ language }) => {
   }, []);
 
   const showPortfolio = data.map((item) => {
-    console.log(item);
     return (
       <div key={item.id}>
         <Link to={`/portafolio/${item.id}`}>

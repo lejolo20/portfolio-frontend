@@ -13,7 +13,6 @@ import { languageContext } from "../context/languageContext";
 const Home = () => {
   const { languageFunction, language } = useContext(languageContext);
 
-  console.log(languageFunction);
   return (
     <>
       <StateLanguage>
