@@ -6,11 +6,14 @@ import { Link } from "react-router-dom";
 
 const MyWork = ({ language }) => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const getData = async () => {
+    setLoading(true);
     try {
       const res = await fetch(import.meta.env.VITE_BACKEND_API_URL);
       const data = await res.json();
+      setLoading(false);
       return setData(data);
     } catch (error) {
       console.log(error);
@@ -70,7 +73,14 @@ const MyWork = ({ language }) => {
           ? "A selection of my range of work"
           : "Una selección de mi trabajo"}
       </p>
-      <div className="portfolio">{showPortfolio}</div>
+      {loading ? (
+        <>
+          <div className="loading">Loading...</div>
+          <div className="loading-bar"></div>
+        </>
+      ) : (
+        <div className="portfolio">{showPortfolio}</div>
+      )}
     </section>
   );
 };
