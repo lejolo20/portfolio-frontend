@@ -30,11 +30,11 @@ const Portafolio = () => {
           <div className="portafolio__container">
             <h1 className="portafolio__title">{data[params.id]?.title}</h1>
             <a href={data[params.id]?.url} target="_blank">
-              {params.id == 0 ? (
+              {params.id < 9 ? (
                 <div className="portafolio__img__container">
                   <img
                     className="portafolio__img"
-                    src={`../portfolio-01-01.jpg`}
+                    src={`../portfolio-0${parseInt(params.id) + 1}.jpg`}
                   />
                   <div className="center">Click Here!!</div>
                 </div>
@@ -42,7 +42,7 @@ const Portafolio = () => {
                 <div className="portafolio__img__container">
                   <img
                     className="portafolio__img"
-                    src={`../portfolio-0${parseInt(params.id) + 1}-01.jpg`}
+                    src={`../portfolio-${parseInt(params.id) + 1}.jpg`}
                   />
                   <div className="center">Click Here!!</div>
                 </div>

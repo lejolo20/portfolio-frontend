@@ -33,15 +33,15 @@ const MyWork = ({ language }) => {
       <div key={item.id}>
         <div className="portfolio__container">
           <Link to={`/portafolio/${item.id}`}>
-            {item.id == 0 ? (
+            {item.id < 9 ? (
               <img
-                src={`../portfolio-01.jpg`}
+                src={`../portfolio-0${item.id + 1}.jpg`}
                 alt={`${item.title}`}
                 className="portfolio__img"
               />
             ) : (
               <img
-                src={`../portfolio-0${item.id + 1}.jpg`}
+                src={`../portfolio-${item.id + 1}.jpg`}
                 alt={`${item.title}`}
                 className="portfolio__img"
               />
