@@ -55,8 +55,8 @@ const MyWork = ({ language }) => {
           </h6>
           <div className="portfolio__description">
             {language
-              ? item.descriptionEnglish.substring(0, 65) + "..."
-              : item.descripcionEspañol.substring(0, 65) + "..."}
+              ? item.descriptionEnglish.substring(0, 64) + "..."
+              : item.descripcionEspañol.substring(0, 64) + "..."}
           </div>
         </div>
       </div>

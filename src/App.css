@@ -20,9 +20,9 @@
   --fs-h1: 2.5rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.1rem;
-  --fs-h4:1rem;
+  --fs-h4: 1rem;
   --fs-body: 1rem;
-  --fs-body2:0.75rem
+  --fs-body2: 0.75rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -35,7 +35,7 @@
     --fs-h3: 1.5rem;
     --fs-h4: 1.25rem;
     --fs-body: 1.125rem;
-    --fs-body2:1rem
+    --fs-body2: 1rem;
   }
 }
 
@@ -452,6 +452,9 @@ header {
 .portfolio__img {
   z-index: 10;
   border-radius: 0.5rem 0.5rem 0 0;
+  height: 250px;
+  width: auto;
+  object-fit: contain;
 }
 
 .portfolio__item:focus {
@@ -685,21 +688,25 @@ input[type="checkbox"] {
     margin: 2rem 0 0;
     font-size: var(--fs-h3);
   }
+
+  .portfolio__img {
+    object-fit: contain;
+    height: auto;
+  }
 }
 
-.loading{
+.loading {
   position: relative;
   justify-content: center;
   margin: 0 auto;
-  top:0;
+  top: 0;
   left: 0;
   /* font-size: larger;
   font-weight: 400; */
   animation: loading 2s infinite linear;
-  
 }
 
-.loading-bar{
+.loading-bar {
   position: relative;
   justify-content: center;
   margin: 0 auto;
@@ -715,14 +722,13 @@ input[type="checkbox"] {
   0% {
     opacity: 0;
     width: 0px;
-    
   }
   50% {
     opacity: 1;
     width: 300px;
-    bottom:0;
+    bottom: 0;
   }
-  100%{
+  100% {
     opacity: 0;
     width: 0px;
   }
@@ -730,10 +736,10 @@ input[type="checkbox"] {
 
 @keyframes loading {
   0% {
-    opacity: 0;    
+    opacity: 0;
   }
-  50%{
-    opacity: 1
+  50% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
