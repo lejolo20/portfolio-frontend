@@ -36,20 +36,22 @@ const Services = ({ language }) => {
             <h3>2</h3>
             {language ? (
               <p>
-                I have hands-on experience in developing web applications using
-                HTML, CSS, and JavaScript, along with frameworks like ReactJs. I
-                am also well-versed in backend technologies like NodeJs and
-                ExpressJs, and proficient in both SQL(SQLite) and NoSQL(MongoDB)
-                databases.
+                Web application developer using HTML, CSS and JavaScript, and
+                frameworks such as ReactJs. and JavaScript, and frameworks like
+                ReactJs. I am also familiar with backend familiar with backend
+                technologies such as NodeJs and ExpressJs, as well as ExpressJs,
+                as well as with SQL(SQLite) and NoSQL(MongoDB) databases
+                NoSQL(MongoDB), I handle Python and Python libraries like
+                Pandas, Numpy, among others.
               </p>
             ) : (
-              
               <p>
-                Desarrollador frontend de aplicaciones web utilizando HTML, CSS
-                y JavaScript, y frameworks como ReactJs. También estoy
+                Desarrollador de aplicaciones web utilizando HTML, CSS y
+                JavaScript, y frameworks como ReactJs. También estoy
                 familiarizado con tecnologías de backend como NodeJs y
                 ExpressJs, así como con bases de datos SQL(SQLite) y
-                NoSQL(MongoDB).
+                NoSQL(MongoDB), manejo Python y librerias de este como Pandas,
+                Numpy, entre otras.
               </p>
             )}
           </div>
