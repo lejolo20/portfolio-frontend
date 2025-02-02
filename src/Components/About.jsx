@@ -20,25 +20,9 @@ const About = ({ language }) => {
         <div className="about-me__body">
           {language ? (
             <p>
-              Mechanical engineer and developer with experience in the design
-              and simulation of mechanical simulation of mechanical parts, as
-              well as in the development of frontend and backend web frontend
-              and backend web applications. Solid knowledge in tools such as
-              Autocad and Solidworks for 2D and 3D design and modeling. 2D and
-              3D modeling. In addition, I have experience in the development of
-              web applications using HTML, CSS and JavaScript and frameworks
-              such as ReactJs. I am also familiar with backend technologies such
-              as NodeJs and ExpressJs, as well as SQL and NoSQL databases SQL
-              and NoSQL databases, including SQLite and MongoDB. I am also
-              familiar with Python and Python libraries such as Pandas, Numpy,
-              among others, as well as AWS EC2. my focus is to create innovative
-              and efficient technical solutions, either in mechanical design or
-              in the field of mechanical design or web application development,
-              using good web application development, using best practices and a
-              results oriented results-oriented approach. With the combination
-              of skills mechanical engineering and web development skills, I can
-              offer comprehensive and creative and creative solutions to diverse
-              technical challenges.
+              Mechanical Engineer and Developer with experience in the design and simulation of mechanical components, as well as in frontend and backend web development. I have solid expertise in tools like AutoCAD and SolidWorks for 2D and 3D design and modeling. Additionally, I develop web applications using HTML, CSS, and JavaScript, along with frameworks such as React.js. On the backend, I work with Node.js and Express.js, as well as SQL and NoSQL databases, including SQLite and MongoDB.
+
+              I also have experience with Python and libraries like Pandas and NumPy, as well as cloud services such as AWS EC2. My focus is on creating innovative and efficient technical solutions in both mechanical design and web development, following best practices and a results-oriented approach. By combining my skills in mechanical engineering and software development, I provide comprehensive and creative solutions to a wide range of technical challenges.
             </p>
           ) : (
             <p>

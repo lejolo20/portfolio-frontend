@@ -745,3 +745,29 @@ input[type="checkbox"] {
     opacity: 0;
   }
 }
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b9b4b4;
+  color: rgb(17, 17, 17);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button.active {
+  background-color: #16e0bd;
+  color: black;
+}
+
+.filter-button:hover {
+  background-color: #ddd;
+}
