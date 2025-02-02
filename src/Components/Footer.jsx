@@ -10,8 +10,8 @@ import {
 const Footer = () => {
   return (
     <footer className="footer">
-      <a href="mailto:lejolo20@gmail.com" className="footer__link">
-        lejolo20@gmail.com
+      <a href="mailto:Leonardo.j.lopez.e@gmail.com" className="footer__link">
+        Leonardo.j.lopez.e@gmail.com
       </a>
       <ul className="social-list">
         <li className="social-list__item">
